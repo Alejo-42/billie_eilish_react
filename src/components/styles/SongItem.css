@@ -1,0 +1,474 @@
+.song-item{
+    color: white;
+    margin: 2vh;
+    padding: 2vh;
+    border-radius: 8px;
+    width: 40%;
+    max-height: 100%;
+    .song-info-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .song-poster{
+            width: 50vh;
+            margin: 5vh 0;
+        }
+        .song-title{
+            font-size: 1.5em;
+            text-shadow: 2px 2px 5px black;
+            margin: 0;
+            display: block;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            max-width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .song-release-year{
+            text-shadow: 2px 2px 5px black;
+            font-size: 1.2em;
+            margin: 0;
+        }
+    }
+    .song-progress-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        .playback-control{
+            text-shadow: 2px 2px 5px black;
+            color: white;
+            border: none;
+            background-color: transparent;
+            scale: 2;
+            cursor: pointer;
+            width: fit-content;
+            padding: 2vh 0;
+            margin: 1vh;
+        }
+        .progress-bar-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            .progress-bar{
+                width: 70%;
+            }
+            .current-time,.duration-time{
+                text-shadow: 2px 2px 5px black;
+            }
+        }
+    }
+    .song-ml-container{
+        display: flex;
+        justify-content: space-around;
+        .song-meaning-container{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            h4{
+                width: fit-content;
+                cursor: pointer;
+                margin: 2vh 0;
+                text-align: center;
+            }
+        }
+        .song-listen-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            ul{
+                padding: 0;
+                list-style-type: none;
+                display: flex;
+                li{
+                    margin: 0 5vh;
+                    a{
+                        color: white;
+                        i{
+                            transform: scale(2);
+                        }    
+                    }
+                }
+            }
+        }
+    }
+    &.hmhas{
+        background-color: rgba(0, 0, 255, 0.761);
+        .song-progress-container{
+            .progress-bar-container{
+                .progress-bar {
+                    accent-color: rgb(4, 4, 85);
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color: rgba(0, 0, 255, 0.761);
+            }
+        }
+    }
+    &.hte{
+        background-color: rgba(218, 165, 32, 0.72);
+        .song-progress-container{
+            .progress-bar-container{
+                .progress-bar {
+                    accent-color:rgb(125, 94, 17);
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color: rgba(218, 165, 32, 0.72);
+            }
+        }
+    }
+    &.wwafawdwg{
+        background-color: rgba(105, 105, 105, 0.713);
+        .song-progress-container{
+            .progress-bar-container{
+                .progress-bar{
+                    accent-color:rgb(42, 42, 42);
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color: rgba(105, 105, 105, 0.713);
+            }
+        }
+    }
+    &.dsam{
+        background-color:rgba(255, 68, 0, 0.756);
+        .song-progress-container{
+            .progress-bar-container{
+                .progress-bar {
+                    accent-color:rgb(187, 57, 10);
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color:rgba(255, 68, 0, 0.756);
+            }
+        }
+    }
+    &.ldmvonee{
+        background-color:  rgba(250, 128, 114, 0.794);
+        .song-progress-container{
+            .progress-bar-container{
+                .progress-bar {
+                    accent-color: rgb(141, 47, 36);
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color:  rgba(250, 128, 114, 0.794);
+            }
+        }
+    }
+    &.gfbecx{
+        background-color:  rgba(128, 128, 128, 0.848);
+        .song-progress-container{
+            .progress-bar-container{
+                .progress-bar {
+                    accent-color: rgb(46, 46, 46);
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color:  rgba(128, 128, 128, 0.848);
+            }
+        }
+    }
+    &.wwimfftmpb{
+        background-color:  rgba(172, 255, 47, 0.716);
+        .song-progress-container{
+            .progress-bar-container{
+                .progress-bar {
+                    accent-color: rgb(51, 78, 10);
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color:  rgba(172, 255, 47, 0.716);
+            }
+        }
+    }
+    &.t3,&.t{
+        background-color:  rgba(184, 77, 112, 0.761);
+        .song-progress-container{
+            .progress-bar-container{
+                .progress-bar {
+                    accent-color: rgb(117, 24, 55);
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color:  rgba(184, 77, 112, 0.761);
+            }
+        }
+    }
+    &.lvao{
+        background-color:  rgba(128, 0, 128, 0.724);
+        .song-progress-container{
+            .progress-bar-container{
+                .progress-bar {
+                    accent-color: rgb(50, 5, 50)    ;
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color:  rgba(128, 0, 128, 0.724);
+            }
+        }
+    }
+    &.nttd{
+        background-color:  rgba(128, 128, 128, 0.77);
+        .song-progress-container{
+            .progress-bar-container{
+                .progress-bar {
+                    accent-color: rgb(46, 46, 46);
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color:  rgba(128, 128, 128, 0.77);
+            }
+        }
+    }
+    &.eiw{
+        background-color: rgba(61, 83, 99, 0.757);;
+        .song-progress-container{
+            .progress-bar-container{
+                .progress-bar {
+                    accent-color: rgb(4, 6, 14);
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color: rgba(61, 83, 99, 0.757);;
+            }
+        }
+    }
+    &.wiwo{
+        background-color: rgba(247, 255, 193, 0.778);
+        .song-info{
+            color: black;
+            .song-title, h4{
+                text-shadow: none;
+            }
+        }
+        .song-progress-container{
+            .playback-control{
+                color: black;
+                text-shadow: none;
+            }
+            .progress-bar-container{
+                span{
+                    color: black;
+                    text-shadow: none;
+                }
+                .progress-bar {
+                    accent-color: rgb(90, 94, 61);
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color: rgba(247, 255, 193, 0.778);
+            }
+        }
+    }
+    &.bbh{
+        background-color: rgba(165, 42, 42, 0.76);
+        .song-progress-container{
+            .progress-bar-container{
+                .progress-bar {
+                    accent-color: rgb(62, 12, 12);
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color: rgba(165, 42, 42, 0.76);
+            }
+        }
+    }
+    &.coap{
+        background-color: rgba(137, 43, 226, 0.757);
+        .song-progress-container{
+            .progress-bar-container{
+                .progress-bar {
+                    accent-color: rgb(45, 13, 74);
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color: rgba(137, 43, 226, 0.757);
+            }
+        }
+    }
+    &.lf{
+        background-color: rgba(255, 255, 255, 0.778);
+        .song-info{
+            color: black;
+            .song-title, h4{
+                text-shadow: none;
+            }
+        }
+        .song-progress-container{
+            .playback-control{
+                color: black;
+                text-shadow: none;
+            }
+            .progress-bar-container{
+                span{
+                    color: black;
+                    text-shadow: none;
+                }
+                .progress-bar {
+                    accent-color: rgb(46, 46, 46);
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color: rgba(255, 255, 255, 0.778);
+            }
+        }
+    }
+    &.b{
+        background-color: rgba(32, 32, 80, 0.724);
+        .song-progress-container{
+            .progress-bar-container{
+                .progress-bar {
+                    accent-color: rgb(14, 14, 43);
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color: rgba(32, 32, 80, 0.724);
+            }
+        }
+    }
+    &.sfu{
+        background-color: rgba(18, 54, 54, 0.813);
+        .song-progress-container{
+            .progress-bar-container{
+                .progress-bar {
+                    accent-color: rgb(7, 24, 24);
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color: rgba(18, 54, 54, 0.813);
+            }
+        }
+    }
+    &.he{
+        background-color: rgba(210, 105, 30, 0.727);
+        .song-progress-container{
+            .progress-bar-container{
+                .progress-bar {
+                    accent-color: rgb(85, 40, 7);
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-overlay{
+            .modal-content{
+                background-color: rgba(210, 105, 30, 0.727);
+            }
+        }
+    }
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        .modal-content {
+            padding: 4vh;
+            border-radius: 10px;
+            max-width: 60vw;
+            width: 90%;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            .modal-title{
+                font-size: 2em;
+                margin: 0;
+            }
+            .meaning-body{
+                .meaning-title,.meaning-text{
+                    margin: 3vh 0;
+                }
+            }
+        }
+        .close-button {
+            position: absolute;
+            top: 2vh;
+            right: 2vh;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2em;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .song-item{
+        width: 75%;
+        .song-info-container{
+            .song-poster{
+                width: 25vh;
+                margin: 4vh 0 4vh 0;
+            }
+        }
+        .song-ml-container{
+            display: flex;
+            flex-direction: column;
+            .song-meaning-container,.song-listen-container{
+                margin: 1vh 0;
+            }
+        }
+    }
+}

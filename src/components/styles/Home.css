@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'General';
+    src: url(/src/assets/font/GENERAL-font.ttf);
+}
+body{
+    background: gray url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/general/img/wallpaper.jpeg') no-repeat top fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'General'
+}

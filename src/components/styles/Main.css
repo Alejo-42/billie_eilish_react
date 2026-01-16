@@ -1,0 +1,62 @@
+main{
+    padding: 1vh;
+    background-color: rgba(255, 255, 255, 0.676);
+    h1{
+    text-align: center;
+    margin: 0;
+    font-size: 6em;
+
+    }
+    .intro,.info{
+        p{
+            margin: 1vh;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+            overflow-wrap: break-word;
+        }
+    }
+    .list-media{
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        .media{
+            margin: 3vh;
+            a{
+                padding: 3vh;
+                i{
+                    color: black;
+                    scale: 2.5;
+                    transition: all 0.5s;
+                    &.fa-instagram:hover{
+                        color: deeppink;
+                    }
+                    &.fa-facebook:hover{
+                        color: blue;
+                    }
+                    &.fa-youtube:hover{
+                        color: red;
+                    }
+                    &.fa-tiktok:hover{
+                        color: darkslategray;
+                    }
+                    &.fa-spotify:hover{
+                        color: rgb(29, 185, 84);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    main{
+        .list-media{
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            li{
+                width: fit-content;
+            }
+        }
+    }
+}

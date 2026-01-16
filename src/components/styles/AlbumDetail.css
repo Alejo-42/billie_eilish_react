@@ -1,0 +1,115 @@
+.album-container{
+    min-height: 100vh;
+    width: 100vw;
+    background: rgba(255, 255, 255, 0.676) center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    transition: background 0.5s ease;
+    .loading{
+        width: 100%;
+        margin: 0;
+        padding: 5vh 0 0 0 ;
+        height: 100vh;
+        text-align: center;
+        color: black;
+        background-color: transparent;
+    }
+    .back-link{
+        text-decoration: none;
+        display: block;
+        color: white;
+        padding: 2vh;
+    }
+    .album-title{
+        text-align: center;
+        margin: 0;
+        background-color: white;
+        font-size: 4em;
+        padding: 4vh 0;
+        width: 100vw;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .songs-list{
+        display: flex;
+        list-style-type: none;
+        text-align: center;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+}
+
+.album-container.hmhas{
+    background-image:   url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/hmhas/img/hmhas-poster-pc.jpeg');
+    h1{
+        font-family: 'HMHAS';
+        color: blue;
+        text-transform: uppercase;    
+    }
+}
+
+.album-container.hte{
+    background-image: url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/hte/img/hte-poster-pc.jpeg');
+    h1{
+        font-family: 'HTE';
+        padding: 4vh;
+        color: goldenrod;
+    }
+}
+
+.album-container.wwafawdwg{
+    background-image: url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/wwafawdwg/img/wwafawdwg-poster-pc.jpeg');
+    h1{
+        font-family: 'WWAFAWDWG';
+        color: dimgray;
+        text-transform: uppercase;
+    }
+}
+
+.album-container.dsam{
+    background-image: url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/dsam/img/dsam-poster-pc.jpeg');
+    h1{
+        font-family: 'DSAM';
+        text-transform: uppercase;
+        color: orangered;
+    }
+}
+.album-container.as{
+    background-image: url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/as/img/as-poster-pc.jpeg');
+    h1{
+        text-transform: uppercase;
+        color: darkslategrey;
+    }
+}
+
+@media (max-width:768px) {
+    .album-container {
+        .songs-list{
+            flex-direction: column;
+        }
+    }
+    .album-container.hmhas{
+        background-image:   url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/hmhas/img/hmhas-poster-cel.jpeg');
+    }
+    .album-container.hte{
+        background-image:   url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/hte/img/hte-poster-cel.jpeg');
+    }
+    .album-container.wwafawdwg{
+        background-image:   url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/wwafawdwg/img/wwafawdwg-poster-cel.jpeg');
+    }
+    .album-container.dsam{
+        background-image:   url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/dsam/img/dsam-poster-cel.jpeg');
+    }
+    .album-container.as{
+        background-image: url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/as/img/as-poster-cel.jpeg');
+    }
+}

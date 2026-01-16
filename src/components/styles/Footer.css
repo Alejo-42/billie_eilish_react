@@ -1,0 +1,41 @@
+footer{
+    background-color: black;
+    color: white;
+    padding: 1%;
+    .title-my-media{
+        text-align: center;
+        margin: 1vh;
+    }
+    .list-my-media{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0;
+        .my-media{
+            margin: 1vh;
+            a{
+                padding: 1vh;
+                i{
+                    color: white;
+                    scale: 2;
+                }
+            }
+        }
+    }
+    p{
+        text-align: center;
+        margin: 1vh;
+    }
+}
+@media (max-width:768px) {
+    footer{
+        .list-my-media{
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            li{
+                width: fit-content;
+            }
+        }
+    }
+}
