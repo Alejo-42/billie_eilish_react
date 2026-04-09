@@ -13,3 +13,16 @@
         color: white;
     }
 }
+
+@media (max-width:500px) {
+    .songProgress{
+        justify-content: space-between;
+        input[type="range"]{
+            width: 100%;
+            margin: 0;
+        }
+        span{
+            margin: 0 5px;
+        }
+    }
+}

@@ -259,3 +259,10 @@
         width: 60%;
     }
 }
+
+@media (max-width:500px) {
+    .songItem{
+        margin: 1vh;
+        width: 90%;
+    }
+}
