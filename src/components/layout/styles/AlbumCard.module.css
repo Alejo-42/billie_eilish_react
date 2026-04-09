@@ -1,0 +1,59 @@
+.albumCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh 2vh;
+    width: 100%;
+    .albumInfoCover{
+        width: 30%;
+        .albumCover{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.281);
+            width: 100%;
+            height: auto;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                scale: 1.05;
+            }
+        }
+    }
+    .albumInfo{
+        text-align: center;
+        .albumTitle{
+            margin: 4vh;
+            font-size: 1.5rem;
+            text-shadow: black 0.1em 0.1em 0.2em;
+            .releaseYear{
+                margin-left: 0.5em;
+                font-size: 35px;
+                font-family: 'General';
+            }
+            &.hmhas{
+                font-family: 'HMHAS', sans-serif;
+                color: blue;
+                font-size: 2em;
+            }
+            &.hte{
+                font-family: 'HTE', sans-serif;
+                color: #dbaf1e;
+                font-size: 4em;
+            }
+            &.wwafawdwg{
+                font-family: 'WW', sans-serif;
+                color: #d7d7d7;
+                font-size: 2.5em;
+            }
+            &.dsam{
+                color: #ff6f61;
+                font-family: 'DSAM', sans-serif;
+                font-size: 2em;
+            }
+        }
+    }   
+}
+@media (max-width:787px) {
+    .albumCard{
+        .albumInfoCover{
+            width: 50%;
+        }
+    }
+}

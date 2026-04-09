@@ -1,0 +1,36 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'General', sans-serif; 
+}
+@font-face {
+  font-family: 'General';
+  src: url(/src/assets/font/GENERAL-font.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HMHAS';
+  src: url(/src/assets/font/HMHAS-font.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HTE';
+  src: url(/src/assets/font/HTE-font.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'WW';
+  src: url(/src/assets/font/WWAFAWDWG-font.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DSAM';
+  src: url(/src/assets/font/DSAM-font.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

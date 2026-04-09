@@ -1,0 +1,63 @@
+.sectionLeft, .sectionRight{
+    margin: 0 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .textColumn{
+        margin: 2vh;
+        max-width: 90%;
+        .text{
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+    }
+}
+.sectionLeft{
+    .imageColumn{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        .bioImage{
+            width: 100%;
+            height: auto;
+        }
+    }   
+    .textColumn{
+        width: 60%;
+        padding: 2vh;
+    }
+}
+.sectionRight{
+    flex-direction: row-reverse;
+    .imageColumn{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        .bioImage{
+            width: 100%;
+            height: auto;
+        }
+    }   
+    .textColumn{
+        width: 60%;
+        padding: 2vh;
+    }
+}
+@media (max-width: 787px) {
+    .sectionLeft, .sectionRight{
+        margin: 0;
+        flex-direction: column-reverse;
+        .imageColumn{
+            width: 60%;
+        }
+        .textColumn{
+            width: 100%;
+            padding: 0;
+            margin: 4vh 0;
+            .text{
+                margin: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.socialLinkItem{
+    .socialLink{
+        font-size: 1.5em;
+        transition: color 0.3s ease;
+        color: #fff;
+        &.fa-spotify:hover{
+            color: #1DB954;
+        }
+        &.fa-facebook:hover{
+            color: #2d59b8;
+        }
+        &.fa-instagram:hover{
+            color: #e4405f;
+        }
+        &.fa-youtube:hover{
+            color: #FF0000;
+        }
+        &.fa-tiktok:hover{
+            color: #575f5f;
+        }
+    }
+}
+@media (max-width: 787px) {
+    .socialLinkItem{
+        margin: 3vh;
+    }
+}

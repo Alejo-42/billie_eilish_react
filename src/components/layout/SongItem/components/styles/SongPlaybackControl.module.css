@@ -1,0 +1,10 @@
+.control{
+    margin: 2vh 0;
+    button{
+        color: white;
+        background-color: transparent;
+        border: none;
+        scale: 2.8;
+        cursor: pointer;
+    }
+}

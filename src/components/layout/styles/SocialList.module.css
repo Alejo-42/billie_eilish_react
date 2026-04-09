@@ -1,0 +1,39 @@
+    .socialLinksList{
+        list-style-type: none;
+        margin: 5vh;
+        display: flex;
+        justify-content: space-evenly;
+        .socialLinkItem{
+            .socialLink{
+                font-size: 1.5em;
+                transition: color 0.3s ease;
+                color: #fff;
+
+                &.fa-facebook:hover{
+                    color: #2d59b8;
+                }
+                &.fa-instagram:hover{
+                    color: #e4405f;
+                }
+                &.fa-tiktok:hover{
+                    color: #575f5f;
+                }
+            }
+        }
+        .noIcon{
+            font-size: 1.2em;
+            color: #fff;
+        }
+    }
+@media (max-width: 787px) {
+    .socialLinksList{
+        flex-wrap: wrap;
+        .socialLinkItem{
+            .socialLink {
+                svg{
+                    scale: 1.2;
+                }
+            }
+        }
+    }
+}  

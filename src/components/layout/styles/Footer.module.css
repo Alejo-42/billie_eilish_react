@@ -1,0 +1,29 @@
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    h3{
+        margin: 5vh;
+        font-size: 2em;
+    }
+    .copyright{
+        padding: 1vh;
+        font-size: 1em;
+    }
+    .noLinks{
+        color: #888;
+        font-style: italic;
+    }
+}
+@media (max-width: 787px) {
+    footer{
+        h3{
+            margin: 2vh;
+            font-size: 3em;
+        }
+        .copyright{
+            font-size: 1.6em;
+        }
+    }
+}

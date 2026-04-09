@@ -1,0 +1,31 @@
+.contentInfo{
+    text-align: center;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    p{
+        display: flex;
+        flex-direction: column;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        transition: all 0.5s ease;
+        &:hover{
+            color: rgb(255, 255, 255);
+            filter: drop-shadow(1px 1px 7px white);
+        }
+    }
+}
+
+@media (max-width: 787px) {
+    .contentInfo{
+        margin: 3%;
+        h1{
+            font-size: 4em;
+            margin: 2vh;
+        }
+        p{
+            font-size: 1.8em;
+        }
+    }
+}

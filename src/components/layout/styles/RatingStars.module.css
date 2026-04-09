@@ -1,0 +1,20 @@
+.ratingSect {
+    display: flex;
+    align-items: center;
+    margin: 2vh;
+}
+
+.starDefault {
+    color: #444;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.starActive {
+    color: #ffcc00; 
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    filter: drop-shadow(0 0 5px rgba(255, 204, 0, 0.5));
+}

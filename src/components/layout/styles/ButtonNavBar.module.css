@@ -1,0 +1,23 @@
+.navButton{
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 3vh;
+    scale: 4;
+    width: fit-content;
+    top: 10px;
+    right: 20px;
+    .navIcon{
+        margin: 1vh 0;
+        width: 100%;
+        display: block;
+    }
+}
+@media (max-width:787px) {
+    .navButton{
+        display: flex;
+    }
+}

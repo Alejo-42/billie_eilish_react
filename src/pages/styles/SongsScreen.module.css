@@ -1,0 +1,98 @@
+.container{
+    background-color: black;
+    transition: background 0.3s ease;
+    .h1{
+        font-size: 3em;
+        margin: 0;
+        padding: 4vh;
+        text-shadow: black 0.1em 0.1em 0.2em;
+    }
+    &.hmhas{
+        background: darkblue url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/hmhas/img/hmhas-poster-pc.jpeg') no-repeat center;
+        background-attachment: fixed;
+        background-size: cover;
+        .h1{
+            font-family: 'HMHAS';
+            color: blue;
+            font-size: 4em;
+        }
+    }
+    &.hte{
+        background: goldenrod url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/hte/img/hte-poster-pc.jpeg') no-repeat center;
+        background-attachment: fixed;
+        background-size: cover;
+        .h1{
+            font-family: 'HTE';
+            color: goldenrod;
+            font-size: 7em;
+        }
+    }
+    &.wwafawdwg{
+        background: darkgray url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/wwafawdwg/img/wwafawdwg-poster-pc.jpeg') no-repeat center;
+        background-attachment: fixed;
+        background-size: cover;
+        .h1{
+            font-family: 'WW';
+            color: gray;
+            font-size: 4em;
+        }
+    }
+    &.dsam{
+        background: orange url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/dsam/img/dsam-poster-pc.jpeg') no-repeat center;
+        background-attachment: fixed;
+        background-size: cover;
+        .h1{
+            font-family: 'DSAM';
+            color: orangered;
+            font-size: 4em;
+        }
+    }
+    &.es{
+        background: black url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/as/img/as-poster-pc.jpeg') no-repeat center;
+        background-attachment: fixed;
+        background-size: cover;
+        .h1{
+            font-family: 'General';
+            color: white;
+            font-size: 4em;
+        }
+    }
+    .songList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width: 787px) {
+    .container{
+        .songList{
+            flex-direction: column;
+            align-items: center;
+        }
+        &.hmhas{
+            background: darkblue url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/hmhas/img/hmhas-poster-cel.jpeg') no-repeat center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        &.hte{
+            background: goldenrod url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/hte/img/hte-poster-cel.jpeg') no-repeat center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        &.wwafawdwg{
+            background: darkgray url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/wwafawdwg/img/wwafawdwg-poster-cel.jpeg') no-repeat center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        &.dsam{
+            background: orange url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/dsam/img/dsam-poster-cel.jpeg') no-repeat center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        &.es{
+            background: black url('https://mymplgeovjvwhmnnfxns.supabase.co/storage/v1/object/public/be_page/assets/as/img/as-poster-cel.jpeg') no-repeat center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    }   
+}

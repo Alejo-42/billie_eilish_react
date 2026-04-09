@@ -1,0 +1,28 @@
+.songMeaningApps{
+    .meaning{
+        display: flex;
+        justify-content: center;
+        h3{
+            margin: 3vh 0;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    .apps{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2vh;
+        li{
+            list-style-type: none;
+            margin: 0 1vh;
+            a{
+                color: white;
+                text-decoration: none;
+                margin: 2vh;
+                .appIcon{
+                    scale: 2;
+                }
+            }
+        }
+    }
+}

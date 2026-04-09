@@ -1,0 +1,25 @@
+.container{
+    margin: 4vh 0;
+    .h1{
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 6vh;
+    }
+    .p{
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 2vh;
+    }
+    .loading{
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 2vh;
+        color: red;
+    }
+    .socialMedia{
+        .noLinks{
+            color: #888;
+            font-style: italic;
+        }
+    }
+}
