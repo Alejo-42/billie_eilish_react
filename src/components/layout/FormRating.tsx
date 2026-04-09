@@ -3,6 +3,7 @@ import { RatingStars } from './RatingStars';
 import styles from './styles/FormRating.module.css';
 
 export const FormRating = ({ 
+  
   showForm, 
   rating, 
   name, 
@@ -12,6 +13,7 @@ export const FormRating = ({
   setComment, 
   handleSubmit, 
   handleStarClick }: RatingFormProps) => {
+    
   return (
     <>
       <div className={styles.contentRating}>

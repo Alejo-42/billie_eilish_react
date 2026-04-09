@@ -10,6 +10,7 @@ export const useRatingForm = (targetId: string, targetType: 'album' | 'song' | '
 
         const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             e.preventDefault();
+            
             if (rating === 0) {
                 alert("Please select a rating before submitting.");
                 return;
@@ -27,6 +28,21 @@ export const useRatingForm = (targetId: string, targetType: 'album' | 'song' | '
 
         try {
             await ratingService.submitRating(ratingData);
+
+            await fetch("https://formspree.io/f/mojpoqwz", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    Nombre: name,
+                    Rating: rating,
+                    Comentario: comment,
+                    Tipo: targetType
+                })
+                });
+
             alert("¡Thanks for your rating!");
             setRating(0); setName(''); setComment('');
         } catch (error) {
