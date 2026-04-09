@@ -18,8 +18,9 @@ export const FormRating = ({
         <p>How would you rate this project?</p>
         <RatingStars rating={rating} setRating={handleStarClick} />
         {showForm && (
-          <form className={styles.ratingForm} onSubmit={handleSubmit}>
+          <form className={styles.ratingForm} onSubmit={handleSubmit} action='https://formspree.io/f/mojpoqwz' method='POST'>
             <input 
+              name='name'
               title="UserName" 
               placeholder="Name" 
               value={name} 
@@ -27,6 +28,7 @@ export const FormRating = ({
             />
             <textarea 
               name="opinion" 
+              title='Opinion/Review'
               placeholder="Opinion/Review" 
               value={comment} 
               onChange={(e) => setComment(e.target.value)} 
